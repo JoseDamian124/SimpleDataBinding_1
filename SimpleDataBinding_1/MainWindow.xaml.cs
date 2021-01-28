@@ -24,5 +24,10 @@ namespace SimpleDataBinding_1
         {
             InitializeComponent();
         }
+
+        private void textoTexBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            textoTexBlock.Text = textoTexBox.Text;
+        }
     }
 }
